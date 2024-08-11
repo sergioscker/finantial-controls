@@ -1,13 +1,12 @@
 import { InputMask } from '@react-input/mask';
-
-import { Buttons } from '../../components/button';
-import { Dialog } from '../../components/dialog';
 import { Input } from '../../components/inputs';
 import { Logo } from '../../components/logo';
 import { Title } from '../../components/title';
 import { ButtonIcon } from '../../components/button-icon';
 import { Card } from '../../components/card';
 import { TransactionsPainel } from '../../components/transactions';
+import { CreateCategoryDialog } from '../../components/create-category-dialog';
+import { CreateTransactionDialog } from '../../components/create-transaction-dialog';
 
 import {
   ContainerMain,
@@ -29,9 +28,10 @@ export function Home() {
     <>
       <Header>
         <Logo />
+
         <div>
-          <Dialog trigger={<Buttons>New transaction</Buttons>}>Olá</Dialog>
-          <Buttons>New category</Buttons>
+          <CreateTransactionDialog />
+          <CreateCategoryDialog />
         </div>
       </Header>
 
@@ -52,6 +52,7 @@ export function Home() {
                 label="Start"
                 placeholder="dd/mm/yyyy"
               />
+
               <InputMask
                 component={Input}
                 mask="dd/mm/yyyy"
@@ -60,6 +61,7 @@ export function Home() {
                 label="End"
                 placeholder="dd/mm/yyyy"
               />
+
               <ButtonIcon />
             </InputGroup>
           </Filters>
@@ -77,6 +79,7 @@ export function Home() {
                 subtitle="Expenses by category and period"
               />
             </header>
+
             <ChartContent />
           </ChartContainer>
 
@@ -96,6 +99,7 @@ export function Home() {
                   label="Year"
                   placeholder="yyyy"
                 />
+
                 <ButtonIcon />
               </ChartActions>
             </header>

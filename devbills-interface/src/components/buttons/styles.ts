@@ -5,7 +5,7 @@ type ContainerProps = {
   $variant: 'default' | 'outline';
 };
 
-export const Button = styled.button<ContainerProps>`
+export const Buttons = styled.button<ContainerProps>`
   display: flex;
   align-items: center;
   justify-content: center;
