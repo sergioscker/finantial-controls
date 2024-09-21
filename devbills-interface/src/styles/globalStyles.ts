@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 import { theme } from './themes';
 
 export default createGlobalStyle`
-    * {
+  * {
     margin: 0;
     padding: 0;
     outline: none;
@@ -26,6 +26,5 @@ export default createGlobalStyle`
   #root  {
     max-width: 1280px;
     margin: 0 auto;
-
   }
   `;

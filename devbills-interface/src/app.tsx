@@ -1,12 +1,13 @@
-import { Home } from './Screens/home';
+import { AppProvider } from './hooks';
+import { Home } from './screens/home';
 
 import GlobalStyles from './styles/globalStyles';
 
 export function App() {
   return (
-    <>
+    <AppProvider>
       <GlobalStyles />
       <Home />
-    </>
+    </AppProvider>
   );
 }

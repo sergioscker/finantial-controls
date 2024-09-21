@@ -25,7 +25,7 @@ export function TransactionsPainel({
   return (
     <TransactionsAside>
       <Info>
-        <span>#{id.toString().padStart(4, '0')}</span>
+        <span>{id.toString().padStart(4, '0')}</span>
         <div>
           <strong>{title}</strong>
           <span>{date}</span>

@@ -7,6 +7,7 @@ import { Card } from '../../components/card';
 import { TransactionsPainel } from '../../components/transactions';
 import { CreateCategoryDialog } from '../../components/create-category-dialog';
 import { CreateTransactionDialog } from '../../components/create-transaction-dialog';
+import { CategoriesPieChart } from '../../components/categories-pie-chart';
 
 import {
   ContainerMain,
@@ -22,6 +23,7 @@ import {
   Aside,
   SearchTransaction,
 } from './styles';
+import { FinancialEvolutionBarChart } from '../../components/financial-evolution';
 
 export function Home() {
   return (
@@ -80,14 +82,16 @@ export function Home() {
               />
             </header>
 
-            <ChartContent />
+            <ChartContent>
+              <CategoriesPieChart />
+            </ChartContent>
           </ChartContainer>
 
           <ChartContainer>
             <header>
               <Title
                 title="Finantial Evolution"
-                subtitle="Balances, Revenues, Spending the in year"
+                subtitle="Balances, Incomes, Spending the in year"
               />
 
               <ChartActions>
@@ -103,7 +107,9 @@ export function Home() {
                 <ButtonIcon />
               </ChartActions>
             </header>
-            <ChartContent />
+            <ChartContent>
+              <FinancialEvolutionBarChart />
+            </ChartContent>
           </ChartContainer>
         </Section>
         <Aside>
