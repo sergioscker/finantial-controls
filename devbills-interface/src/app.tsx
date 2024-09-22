@@ -1,5 +1,5 @@
 import { AppProvider } from './hooks';
-import { Home } from './Screens/home';
+import { Home } from './pages/home';
 
 import GlobalStyles from './styles/globalStyles';
 
