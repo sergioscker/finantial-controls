@@ -12,18 +12,18 @@ import { CategoriesPieChart } from '../../components/categories-pie-chart';
 import { FinancialEvolutionBarChart } from '../../components/financial-evolution';
 
 import {
-  ContainerMain,
-  Filters,
-  InputGroup,
-  Header,
-  Section,
+  Aside,
   Balance,
+  ChartActions,
   ChartContainer,
   ChartContent,
-  ChartActions,
-  TransactionGroup,
-  Aside,
+  ContainerMain,
+  Filters,
+  Header,
+  InputGroup,
   SearchTransaction,
+  Section,
+  TransactionGroup,
 } from './styles';
 
 export function Home() {
