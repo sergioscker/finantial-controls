@@ -1,4 +1,5 @@
 import { InputMask } from '@react-input/mask';
+
 import { Input } from '../../components/inputs';
 import { Logo } from '../../components/logo';
 import { Title } from '../../components/title';
@@ -8,6 +9,7 @@ import { TransactionsPainel } from '../../components/transactions';
 import { CreateCategoryDialog } from '../../components/create-category-dialog';
 import { CreateTransactionDialog } from '../../components/create-transaction-dialog';
 import { CategoriesPieChart } from '../../components/categories-pie-chart';
+import { FinancialEvolutionBarChart } from '../../components/financial-evolution';
 
 import {
   ContainerMain,
@@ -23,7 +25,6 @@ import {
   Aside,
   SearchTransaction,
 } from './styles';
-import { FinancialEvolutionBarChart } from '../../components/financial-evolution';
 
 export function Home() {
   return (
