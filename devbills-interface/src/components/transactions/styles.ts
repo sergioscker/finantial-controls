@@ -37,7 +37,7 @@ export const TransactionsAside = styled.div`
   }
 `;
 
-export const Info = styled.div<ContentType>`
+export const InfoContent = styled.div<Pick<ContentType, '$variant'>>`
   display: flex;
   align-items: flex-start;
   gap: 0.5rem;

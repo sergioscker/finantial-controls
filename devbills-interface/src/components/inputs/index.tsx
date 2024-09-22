@@ -12,7 +12,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(function (
   ref,
 ) {
   return (
-    <Container $variant={variant}>
+    <Container $variant={variant} $label={label || ''}>
       {label && <label>{label}</label>}
       <input ref={ref} {...props} />
     </Container>

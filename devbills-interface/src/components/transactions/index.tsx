@@ -1,12 +1,13 @@
 import { formatCurrency } from '../../utils/format-currency';
 
-import { TransactionsAside, Info, Content } from './styles';
+import { TransactionsAside, Content, InfoContent } from './styles';
 
 type TransactionsProps = {
   id: number;
   title: string;
   date: string;
   amount: number;
+
   category: {
     title: string;
     color: string;
@@ -24,13 +25,14 @@ export function TransactionsPainel({
 }: TransactionsProps) {
   return (
     <TransactionsAside>
-      <Info>
+      <InfoContent $variant={variant}>
         <span>{id.toString().padStart(4, '0')}</span>
+
         <div>
           <strong>{title}</strong>
           <span>{date}</span>
         </div>
-      </Info>
+      </InfoContent>
 
       <Content $variant={variant} $tagColor={category.color}>
         <strong>{formatCurrency(amount)}</strong>
