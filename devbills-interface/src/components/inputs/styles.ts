@@ -20,12 +20,12 @@ export const Container = styled.div<ContainerProps>`
   input {
     height: 2.25rem;
     background-color: ${(props) => theme.colors[props.$variant]};
-    border-radius: 0.25rem;
     padding: 0 0.75rem;
     color: ${theme.colors.neutral};
     font-size: 1rem;
     width: 100%;
     border: 1px solid transparent;
+    border-radius: 0.25rem;
     transition: all 100ms;
 
     &:focus {

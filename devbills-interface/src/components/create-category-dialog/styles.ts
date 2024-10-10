@@ -1,4 +1,5 @@
 import { styled } from 'styled-components';
+import { theme } from '../../styles/themes';
 
 export const Container = styled.div`
   display: flex;
@@ -13,7 +14,7 @@ export const Container = styled.div`
     > div {
       display: grid;
       grid-template-columns: 80% auto;
-      grid-gap: 0.5rem;
+      gap: 0.5rem;
     }
   }
 
@@ -23,4 +24,11 @@ export const Container = styled.div`
     justify-content: flex-end;
     gap: 0.75rem;
   }
+`;
+
+export const ErrorMessageCategory = styled.span`
+  margin-top: 0.125rem;
+  font-size: 0.625rem;
+  line-height: 80%;
+  color: ${theme.colors.error};
 `;

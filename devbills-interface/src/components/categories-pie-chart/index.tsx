@@ -7,20 +7,26 @@ import { formatCurrency } from '../../utils/format-currency';
 const apiData = [
   {
     _id: '1',
-    title: 'Alimentacion',
-    amount: 30000,
+    title: 'Market',
+    amount: 40000,
     color: '#ff5555',
   },
   {
     _id: '2',
     title: 'Shoppings',
-    amount: 15000,
+    amount: 30000,
+    color: '#770006',
+  },
+  {
+    _id: '3',
+    title: 'Energy',
+    amount: 5000,
     color: '#000877',
   },
   {
     _id: '3',
-    title: 'Streaming',
-    amount: 6000,
+    title: 'Reantal',
+    amount: 80000,
     color: '#00ff00',
   },
 ];

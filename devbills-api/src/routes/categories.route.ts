@@ -21,5 +21,3 @@ categoriesRoutes.post(
   }),
   controller.create,
 );
-
-

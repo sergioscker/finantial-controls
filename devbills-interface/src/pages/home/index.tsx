@@ -71,8 +71,8 @@ export function Home() {
 
           <Balance>
             <Card title="Balance" amount={10000} />
-            <Card title="Balance" amount={10000} variant="incomes" />
-            <Card title="Balance" amount={10000} variant="expenses" />
+            <Card title="Balance" amount={100000} variant="incomes" />
+            <Card title="Balance" amount={90000} variant="expenses" />
           </Balance>
 
           <ChartContainer>
@@ -130,29 +130,29 @@ export function Home() {
               id={1}
               amount={20000}
               date="01/08/2024"
-              category={{ title: 'Alimentação', color: '#ff33bb' }}
-              title="Mercado"
+              category={{ title: 'Food', color: '#fff' }}
+              title="Market"
             />
             <TransactionsPainel
               id={1}
-              amount={20000}
+              amount={30000}
               date="01/08/2024"
-              category={{ title: 'Alimentação', color: '#ff33bb' }}
-              title="Mercado"
+              category={{ title: 'Stores', color: '#fff' }}
+              title="Shopping"
             />
             <TransactionsPainel
               id={1}
-              amount={20000}
+              amount={5000}
               date="01/08/2024"
-              category={{ title: 'Alimentação', color: '#ff33bb' }}
-              title="Mercado"
+              category={{ title: 'Essential accounts', color: '#fff' }}
+              title="Energy"
             />
             <TransactionsPainel
               id={1}
-              amount={20000}
+              amount={80000}
               date="01/08/2024"
-              category={{ title: 'Alimentação', color: '#ff33bb' }}
-              title="Mercado"
+              category={{ title: 'Habitation', color: '#fff' }}
+              title="Rental"
             />
           </TransactionGroup>
         </Aside>

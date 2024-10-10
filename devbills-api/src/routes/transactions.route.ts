@@ -25,6 +25,15 @@ transactionsRoutes.get(
   controller.index,
 );
 
+transactionsRoutes.post(
+  '/',
+  validator({
+    schema: createTransactionSchema,
+    type: ParamsType.BODY,
+  }),
+  controller.create,
+);
+
 transactionsRoutes.get(
   '/dashboard',
   validator({
@@ -41,13 +50,4 @@ transactionsRoutes.get(
     type: ParamsType.QUERY,
   }),
   controller.getFinantialEvolution,
-);
-
-transactionsRoutes.post(
-  '/',
-  validator({
-    schema: createTransactionSchema,
-    type: ParamsType.BODY,
-  }),
-  controller.create,
 );

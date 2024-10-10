@@ -1,3 +1,5 @@
+import dotenv from 'dotenv';
+dotenv.config();
 import mongoose from 'mongoose';
 
 export async function setupMongo(): Promise<void> {
@@ -9,8 +11,9 @@ export async function setupMongo(): Promise<void> {
     console.log('🎲 Connecting to DB...');
 
     await mongoose.connect(process.env.MONGO_URL as string);
+
     console.log('✅✅ DB Conected!');
   } catch {
-    throw new Error('❌ DB not conected.');
+    throw new Error('❌ DB not connected.');
   }
 }

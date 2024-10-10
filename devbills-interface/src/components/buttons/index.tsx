@@ -1,6 +1,6 @@
 import { ComponentProps, forwardRef } from 'react';
 
-import { Buttons } from './styles';
+import { ButtonsContainer } from './styles';
 
 type ButtonProps = ComponentProps<'button'> & {
   variant?: 'default' | 'outline';
@@ -11,8 +11,8 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(function (
   ref,
 ) {
   return (
-    <Buttons ref={ref} {...props} $variant={variant}>
+    <ButtonsContainer ref={ref} {...props} $variant={variant}>
       {children}
-    </Buttons>
+    </ButtonsContainer>
   );
 });

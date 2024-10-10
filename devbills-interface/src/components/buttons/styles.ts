@@ -5,7 +5,7 @@ type ContainerProps = {
   $variant: 'default' | 'outline';
 };
 
-export const Buttons = styled.button<ContainerProps>`
+export const ButtonsContainer = styled.button<ContainerProps>`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,7 +24,7 @@ export const Buttons = styled.button<ContainerProps>`
     css`
       border: 1px solid ${theme.colors.primary};
     `}
-    
+
   &:hover {
     background-color: ${theme.colors.primaryDark};
   }

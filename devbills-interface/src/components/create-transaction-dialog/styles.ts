@@ -57,7 +57,6 @@ export const InputGroup = styled.div`
 export const CurrencyInput = styled(InputNumberFormat)`
   height: 2.25rem;
   background-color: ${theme.colors.black};
-  border: 0;
   border-radius: 0.25rem;
   padding: 0 0.75rem;
   color: ${theme.colors.neutral};
@@ -96,4 +95,11 @@ export const RadioGroup = styled.div`
     color: ${theme.colors.white};
     font-size: 0.875rem;
   }
+`;
+
+export const ErrorMessage = styled.span`
+  margin-top: 0.125rem;
+  font-size: 0.625rem;
+  line-height: 80%;
+  color: ${theme.colors.error};
 `;
