@@ -19,5 +19,7 @@ setupMongo().then(() => {
   app.use(routes);
   app.use(errorHandler);
 
-  app.listen(3001, () => console.log(' 🛜  Server is running at port 3001!'));
+  app.listen(3003, '0.0.0.0', () =>
+    console.log(' 🛜  Server is running at port 3003!'),
+  );
 });

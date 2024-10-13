@@ -26,7 +26,7 @@ import {
 } from './styles';
 
 export function CreateTransactionDialog() {
-  const { categories, fetchCategories } = useFetchAPI();
+  const { categories, fetchCategories, createTransaction } = useFetchAPI();
   const [open, setOpen] = useState(false);
 
   const {
@@ -54,9 +54,13 @@ export function CreateTransactionDialog() {
     setOpen(false);
   }, [reset]);
 
-  const onSubmit = useCallback(() => {
-    handleClose();
-  }, [handleClose]);
+  const onSubmit = useCallback(
+    async (data: CreateTransactionData) => {
+      await createTransaction(data);
+      handleClose();
+    },
+    [handleClose, createTransaction],
+  );
 
   return (
     <Dialog
