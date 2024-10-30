@@ -1,6 +1,6 @@
-# DevBills 💼💻
+# Financial Control 💼💻
 
-**DevBills** is a full-stack application designed to manage and track personal finances. It includes a backend API built with **Node.js** and **TypeScript** and a responsive frontend interface using **React** and **Vite**. The project provides a seamless way to visualize, manage, and track financial data with dynamic charts and detailed forms.
+**Financial Control** is a full-stack application designed to manage and track personal finances. It includes a backend API built with **Node.js** and **TypeScript** and a responsive frontend interface using **React** and **Vite**. The project provides a seamless way to visualize, manage, and track financial data with dynamic charts and detailed forms.
 
 ## 🌐 Project Links
 - **Repository**: [github.com/sergioscker/dev-bills](https://github.com/sergioscker/dev-bills)
@@ -12,7 +12,7 @@
 ## 📦 Technologies Used
 
 ### Backend (API)
-The backend of **DevBills** was developed with **Node.js** and **TypeScript** and includes the following libraries:
+The backend of **Financial Control** was developed with **Node.js** and **TypeScript** and includes the following libraries:
 
 - **Express**: Framework for API routes and middleware.
 - **Mongoose**: For seamless MongoDB integration.
@@ -22,7 +22,7 @@ The backend of **DevBills** was developed with **Node.js** and **TypeScript** an
 - **Dotenv**: For managing environment variables and secrets.
 
 ### Frontend (Interface)
-The **DevBills** frontend was built using **React** with **Vite** for fast development and TypeScript support. Key technologies include:
+The **Financial Control** frontend was built using **React** with **Vite** for fast development and TypeScript support. Key technologies include:
 
 - **React Hook Form + Zod**: Efficient form creation and validation.
 - **Styled-components**: CSS-in-JS for creating flexible, reusable UI components.
@@ -36,7 +36,7 @@ The **DevBills** frontend was built using **React** with **Vite** for fast devel
 ## ⚙️ Features
 
 ### API
-The **DevBills API** provides the following functionalities:
+The **FinancialControl API** provides the following functionalities:
 
 1. **User Management**: Register and authenticate users via JWT tokens.
 2. **Data Validation**: Input validation through **Zod** to ensure secure and correct data handling.
@@ -44,7 +44,7 @@ The **DevBills API** provides the following functionalities:
 4. **Cross-Origin Resource Sharing (CORS)**: Ensures secure consumption of the API across different platforms.
 
 ### Interface
-The **DevBills** interface provides a highly responsive, intuitive user experience, with the following features:
+The **Financial Control** interface provides a highly responsive, intuitive user experience, with the following features:
 
 1. **Form Handling**: Using **React Hook Form** with **Zod**, forms are fast, with seamless validation and error management.
 2. **Dynamic Financial Visualization**: With **Nivo** charting libraries, users can visualize their expenses, income, and bills using pie and bar charts.
@@ -63,13 +63,13 @@ The **DevBills** interface provides a highly responsive, intuitive user experien
 ### Clone the Repository
 ```bash
 git clone https://github.com/sergioscker/dev-bills.git
-cd dev-bills
+cd financial-control
 ```
 
 ### Backend Setup (API)
 1. Install dependencies:
    ```bash
-   cd devbills-api
+   cd financialcontrol-api
    npm install
    ```
 2. Create a `.env` file and set up the required environment variables:
@@ -85,7 +85,7 @@ cd dev-bills
 ### Frontend Setup (Interface)
 1. Install dependencies:
    ```bash
-   cd devbills-interface
+   cd financialcontrol-interface
    npm install
    ```
 2. Run the development server:
@@ -119,7 +119,7 @@ The frontend is deployed using **Vite**, offering a fast and efficient build pro
 
 ## 🎉 Conclusion
 
-Developing **DevBills** has been a fulfilling experience, from building a solid and scalable backend to creating an intuitive and responsive user interface. The use of **TypeScript** across the full stack allowed for better type safety and maintainability. Additionally, leveraging libraries such as **React Hook Form**, **Zod**, and **Nivo** has enhanced the user experience with real-time validation and beautiful visual representations of financial data.
+Developing **Financial Control** has been a fulfilling experience, from building a solid and scalable backend to creating an intuitive and responsive user interface. The use of **TypeScript** across the full stack allowed for better type safety and maintainability. Additionally, leveraging libraries such as **React Hook Form**, **Zod**, and **Nivo** has enhanced the user experience with real-time validation and beautiful visual representations of financial data.
 
 Feel free to explore the project by cloning the repository and running it locally or by contributing through GitHub. Your feedback and contributions are welcome!
 
@@ -130,7 +130,7 @@ This project is licensed under the **ISC** license.
 
 ---
 
-Made with ❤️ by [Sérgio Oliveira](https://github.com/sergioscker) 👨‍💻
+Made with by [Sérgio Oliveira](https://github.com/sergioscker) 👨‍💻
 ```
 
 ---
